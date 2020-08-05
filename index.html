@@ -1,87 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="styles.css">
   <title>Frontend Mentor | [Challenge Name Here]</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
   </style>
 </head>
+
 <body>
-
-  Social Media Dashboard
-  Total Followers: 23,004
-
-  Dark Mode
-
-  
-
-  @nathanf
-  1987
-  Followers
-  12 Today
-
-  @nathanf
-  1044
-  Followers
-  99 Today
-
-  @realnathanf
-  11k
-  Followers
-  1099 Today
-
-  Nathan F.
-  8239
-  Subscribers
-  144 Today
+  <div class="container">
+    <div class="hero">
+      <h2>Social Media Dashboard</h2>
+      <p>Total Followers: 23,004</p>
+      <nav>
+        Dark Mode
+        <label class="switch">
+          <input type="checkbox">
+          <span class="slider round"></span>
+        </label>
+      </nav>
 
 
+      <div class="stats">
+        <div class="facebook card-1">
+          <img src="images/icon-facebook.svg">@nathanf
+          <span>1987</span>
+          Followers
+          <img src="images/icon-up.svg"> 12 Today
+        </div>
+        <div class="twitter card-1">
+          <img src="images/icon-twitter.svg">@nathanf
+          <span>1044</span>
+          Followers
+          <img src="images/icon-up.svg">99 Today
+        </div>
+        <div class="instagram card-1">
+          <img src="images/icon-instagram.svg">@realnathanf
+          <span>11k</span>
+          Followers
+          <img src="images/icon-up.svg">1099 Today
+        </div>
+        <div class="youtube card-1">
+          <img src="images/icon-youtube.svg">Nathan F.
+          <span>8239</span>
+          Subscribers
+          <img src="images/icon-down.svg">144 Today
+        </div>
+      </div>
 
-  Overview - Today
 
-  Page Views
-  87
-  3%
 
-  Likes
-  52
-  2%
+      <h2>Overview - Today</h2>
+      <div class="stats-today">
+        <div class="facebook-bottom card-2">
+          Page Views <img src="images/icon-facebook.svg">
+          87
+          <img src="images/icon-up.svg"> 3%
+        </div>
+        <div class="facebook-bottom card-2">
+          Likes <img src="images/icon-facebook.svg">
+          52
+          <img src="images/icon-down.svg"> 2%
+        </div>
+        <div class="instagram-bottom card-2">
+          Likes <img src="images/icon-instagram.svg">
+          5462
+          <img src="images/icon-up.svg"> 2257%
+        </div>
+        <div class="instagram-bottom card-2">
+          Profile Views <img src="images/icon-instagram.svg">
+          52k
+          <img src="images/icon-up.svg"> 1375%
+        </div>
 
-  Likes
-  5462
-  2257%
+        <div class="twitter-bottom card-2">
+          Retweets <img src="images/icon-twitter.svg">
+          117
+          <img src="images/icon-up.svg"> 303%
+        </div>
+        <div class="twitter-bottom card-2">
+          Likes <img src="images/icon-twitter.svg">
+          507
+          <img src="images/icon-up.svg"> 553%
+        </div>
+        <div class="youtube-bottom card-2">
+          Likes <img src="images/icon-youtube.svg">
+          107
+          <img src="images/icon-down.svg"> 19%
+        </div>
+        <div class="youtube-bottom card-2">
+          Total Views <img src="images/icon-youtube.svg">
+          1407
+          <img src="images/icon-down.svg"> 12%
+        </div>
+      </div>
+    </div>
+  </div>
 
-  Profile Views
-  52k
-  1375%
-
-  Retweets
-  117
-  303%
-
-  Likes
-  507
-  553%
-
-  Likes
-  107
-  19%
-
-  Total Views
-  1407
-  12%
-  
   <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="#">Your Name Here</a>.
   </div>
 </body>
+
 </html>
