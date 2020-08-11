@@ -3,6 +3,9 @@ body {
     font-family: "Inter", sans-serif;
     color: white;
 }
+.paragraph {
+    color: hsl(228, 34%, 66%);                          
+}
 .dark-mode {
     background-color: white;
     color: black;
@@ -31,7 +34,7 @@ max-width: 400px;
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: hsl(210, 78%, 56%);
+    background: aquamarine;
     -webkit-transition: .5s;
     transition: .5s;
 }
@@ -42,12 +45,12 @@ max-width: 400px;
     width: 26px;
     left: 4px;
     bottom: 4px;
-    background-color: white;
+    background-color: hsl(230, 17%, 14%);
     -webkit-transition: .5s;
     transition: .5s;
 }
 input:checked + .slider{
-    background-color: hsl(210, 78%, 56%);
+    background-color:hsl(230, 22%, 74%);
 }
 input:focus + .slider{
     box-shadow: 0 0 1px #2196f3;
@@ -85,8 +88,12 @@ input:checked + .slider:before {
     justify-content: center;
     align-items: center;   
 }
+.handle {
+    color: hsl(228, 34%, 66%);
+}
 .followers {
     font-stretch: extra-expanded;
+    color: hsl(228, 34%, 66%);
 }
 
 .up-down-positive {
@@ -122,24 +129,32 @@ flex-direction: column;
 }
 .views {
     float: left;
-    font-size:10px;
+    font-size:12px;
+    font-stretch: expanded;
+    color: hsl(228, 34%, 66%);
 
 }
 .amount {
     float: left;
     font-size: 30px;
+    padding-top: 20px;
 }
-.percentage {
+.percentage-up {
     float: right;
-    
+    padding-top: 30px; 
+    color: hsl(163, 72%, 41%);  
+}
+.percentage-down {
+    float: right;
+    padding-top: 30px;
+    color: hsl(356, 69%, 56%);
 }
 .icon {
     float: right;
 }
 .icon2 {
     float: right;
+    padding-top: 30px;
 }
-.row-1 {
-    
-}
+
     
