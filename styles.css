@@ -3,14 +3,16 @@ body {
     font-family: "Inter", sans-serif;
     color: white;
 }
+.dark-mode {
+    background-color: white;
+    color: black;
+}
+
 
 .container {
-
+max-width: 400px;
 }
 
-.span {
-    font-weight: 700px;
-}
 .switch{
     position: relative;
     display: inline-block;
@@ -61,33 +63,49 @@ input:checked + .slider:before {
 .slider.round:before {
     border-radius: 50%;
 }
-.stats {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
+.number {
+    font-size: 60px;
+    font-weight: 700px;    
 }
+
 .card-1 {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     background: hsl(228, 28%, 20%);
     margin: 30px;
     text-align: center;
-    padding: 100px 50px;
+    padding: 15px 25px;
     border-radius: 10px;
     max-width: 375px;
+    line-height: 2;
+}
+
+.top-boxes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;   
+}
+.followers {
+    font-stretch: extra-expanded;
+}
+
+.up-down-positive {
+    color: hsl(163, 72%, 41%);
+}
+.up-down-negative {
+    color: hsl(356, 69%, 56%);
 }
 .facebook {
-border-top: solid blue;
+border-top: solid hsl(208, 92%, 53%);
 }
 .twitter {
-border-top: solid lightblue;
+border-top: solid hsl(203, 89%, 53%);
 }
 .instagram {
-border-top: solid orange;
-
+border-top: solid orangered
 }
 .youtube {
-border-top: solid red;
+border-top: solid hsl(348, 97%, 39%);
     
 }
 .card-2 {
@@ -95,7 +113,33 @@ box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 background: hsl(228, 28%, 20%);
 margin: 20px;
 text-align: center;
-padding: 20px 30px;
-border-radius: 10px;
+padding: 30px 30px;
+border-radius: 5px;
 max-width: 375px;
+display: flex;
+flex-wrap: wrap;
+flex-direction: column;
 }
+.views {
+    float: left;
+    font-size:10px;
+
+}
+.amount {
+    float: left;
+    font-size: 30px;
+}
+.percentage {
+    float: right;
+    
+}
+.icon {
+    float: right;
+}
+.icon2 {
+    float: right;
+}
+.row-1 {
+    
+}
+    

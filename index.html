@@ -11,16 +11,7 @@
   <title>Frontend Mentor | [Challenge Name Here]</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution {
-      font-size: 11px;
-      text-align: center;
-    }
 
-    .attribution a {
-      color: hsl(228, 45%, 44%);
-    }
-  </style>
 </head>
 
 <body>
@@ -31,92 +22,132 @@
       <nav>
         Dark Mode
         <label class="switch">
-          <input type="checkbox">
+          <input type="checkbox" onclick="myFunction()">
           <span class="slider round"></span>
         </label>
+
       </nav>
-
-
       <div class="stats">
         <div class="facebook card-1">
-          <img src="images/icon-facebook.svg">@nathanf
-          <span>1987</span>
-          Followers
-          <img src="images/icon-up.svg"> 12 Today
-        </div>
-        <div class="twitter card-1">
-          <img src="images/icon-twitter.svg">@nathanf
-          <span>1044</span>
-          Followers
-          <img src="images/icon-up.svg">99 Today
-        </div>
-        <div class="instagram card-1">
-          <img src="images/icon-instagram.svg">@realnathanf
-          <span>11k</span>
-          Followers
-          <img src="images/icon-up.svg">1099 Today
-        </div>
-        <div class="youtube card-1">
-          <img src="images/icon-youtube.svg">Nathan F.
-          <span>8239</span>
-          Subscribers
-          <img src="images/icon-down.svg">144 Today
+          <div class="top-boxes">
+            <div class="picture-group-1">
+              <img src="images/icon-facebook.svg">
+              <span class="handle">@nathanf</span>
+            </div>
+            <span class="number">1987</span>
+            <span class="followers">Followers</span>
+            <div class="picture-group-2">
+              <br>
+              <img src="images/icon-up.svg">
+              <span class="up-down-positive">12 Today</span>
+            </div>
+          </div>
         </div>
       </div>
-
-
-
-      <h2>Overview - Today</h2>
-      <div class="stats-today">
-        <div class="facebook-bottom card-2">
-          Page Views <img src="images/icon-facebook.svg">
-          87
-          <img src="images/icon-up.svg"> 3%
+      <div class="twitter card-1">
+        <div class="top-boxes">
+          <div class="picture-group-1">
+            <img src="images/icon-twitter.svg">
+            <span class="handle">@nathanf</span>
+          </div>
+          <span class="number">1044</span>
+          <span class="followers">Followers</span>
+          <br>
+          <div class="picture-group-2">
+            <img src="images/icon-up.svg">
+            <span class="up-down-positive">99 Today</span>
+          </div>
         </div>
-        <div class="facebook-bottom card-2">
-          Likes <img src="images/icon-facebook.svg">
-          52
-          <img src="images/icon-down.svg"> 2%
+      </div>
+      <div class="instagram card-1">
+        <div class="top-boxes">
+          <div class="picture-group-1">
+            <img src="images/icon-instagram.svg">
+            <span class="handle">@realnathanf</span>
+          </div>
+          <span class="number">11k</span>
+          <span class="followers">Followers</span>
+          <div class="picture-group-2">
+            <br>
+            <img src="images/icon-up.svg">
+            <span class="up-down-positive">1099 Today</span>
+          </div>
         </div>
-        <div class="instagram-bottom card-2">
-          Likes <img src="images/icon-instagram.svg">
-          5462
-          <img src="images/icon-up.svg"> 2257%
-        </div>
-        <div class="instagram-bottom card-2">
-          Profile Views <img src="images/icon-instagram.svg">
-          52k
-          <img src="images/icon-up.svg"> 1375%
-        </div>
-
-        <div class="twitter-bottom card-2">
-          Retweets <img src="images/icon-twitter.svg">
-          117
-          <img src="images/icon-up.svg"> 303%
-        </div>
-        <div class="twitter-bottom card-2">
-          Likes <img src="images/icon-twitter.svg">
-          507
-          <img src="images/icon-up.svg"> 553%
-        </div>
-        <div class="youtube-bottom card-2">
-          Likes <img src="images/icon-youtube.svg">
-          107
-          <img src="images/icon-down.svg"> 19%
-        </div>
-        <div class="youtube-bottom card-2">
-          Total Views <img src="images/icon-youtube.svg">
-          1407
-          <img src="images/icon-down.svg"> 12%
+      </div>
+      <div class="youtube card-1">
+        <div class="top-boxes">
+          <div class="picture-group-1">
+            <img src="images/icon-youtube.svg">
+            <span class="handle">Nathan F.</span>
+          </div>
+          <span class="number">8239</span>
+          <span class="followers">Subscribers</span>
+          <br>
+          <div class="picture-group-2">
+            <img src="images/icon-down.svg">
+            <span class="up-down-negative">144 Today</span>
+          </div>
         </div>
       </div>
     </div>
+
+    <h2>Overview - Today</h2>
+    <div class="stats-today">
+      <div class="facebook-bottom card-2">
+        <div class="row-1"><span class="views">Page Views</span> <img class="icon" src="images/icon-facebook.svg"></div>
+        <div class="row-2"><span class="amount">87</span>
+        <img class="icon2"src="images/icon-up.svg"> <span class="percentage">3%</span></div>
+      </div>
+      <div class="facebook-bottom card-2">
+        <div class="row-1"><span class="views">Likes</span> <img class="icon" src="images/icon-facebook.svg"></div>
+        <div class="row-2"><span class="amount">52</span>
+        <img class="icon2" src="images/icon-down.svg"> <span class="percentage">2%</span></div>
+      </div>
+      <div class="instagram-bottom card-2">
+        <div class="row-1"><span class="views">Likes</span> <img class="icon" src="images/icon-instagram.svg"></div>
+        <div class="row-2"><span class="amount">5462</span>
+          <img class="icon2" src="images/icon-up.svg"> <span class="percentage">2257%</span></div>
+      </div>
+      <div class="instagram-bottom card-2">
+        <div class="row-1"><span class="views">Profile Views</span> <img class="icon" src="images/icon-instagram.svg"></div>
+        <div class="row-2"><span class="amount">52k</span>
+        <img class="icon2" src="images/icon-up.svg"> <span class="percentage">1375%</span></div>
+      </div>
+
+      <div class="twitter-bottom card-2">
+        <div class="row-1"><span class="views">Retweets</span> <img class="icon" src="images/icon-twitter.svg"></div>
+        <div class="row-2"><span class="amount">117</span>
+        <img class="icon2" src="images/icon-up.svg"> <span class="percentage">303%</span></div>
+      </div>
+      <div class="twitter-bottom card-2">
+        <div class="row-1"><span class="views">Likes</span> <img class="icon" src="images/icon-twitter.svg"></div>
+        <div class="row-2"><span class="amount">507</span>
+        <img class="icon2" src="images/icon-up.svg"> <span class="percentage">553%</span></div>
+      </div>
+      <div class="youtube-bottom card-2">
+        <div class="row-1"><span class="views">Likes</span> <img class="icon" src="images/icon-youtube.svg"></div>
+        <div class="row-2"><span class="amount">107</span>
+        <img class="icon2" src="images/icon-down.svg"> <span class="percentage">19%</span></div>
+      </div>
+      <div class="youtube-bottom card-2">
+        <div class="row-1"><span class="views">Total Views</span> <img class="icon" src="images/icon-youtube.svg"></div>
+        <div class="row-2"><span class="amount">1407</span>
+          <img class="icon2" src="images/icon-down.svg"> <span class="percentage">12%</span></div>
+      </div>
+    </div>
+  </div>
   </div>
 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="#">Your Name Here</a>.
   </div>
+  <script>
+    function myFunction() {
+      var element = document.body;
+      element.classList.toggle("dark-mode");
+    }
+  </script>
 </body>
 
 </html>
