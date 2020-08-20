@@ -6,14 +6,10 @@ body {
 .paragraph {
     color: hsl(228, 34%, 66%);                          
 }
-.dark-mode {
-    background-color: white;
-    color: black;
-}
-
 
 .container {
 max-width: 400px;
+margin: 0 auto;
 }
 
 .switch{
@@ -115,6 +111,7 @@ border-top: solid orangered
 border-top: solid hsl(348, 97%, 39%);
     
 }
+
 .card-2 {
 box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 background: hsl(228, 28%, 20%);
@@ -155,6 +152,51 @@ flex-direction: column;
 .icon2 {
     float: right;
     padding-top: 30px;
+}
+.light-cards {
+    background-color: hsl(227, 47%, 96%);
+    color: black;
+}
+.container.light-cards, .hero.light-cards, .stats-today.light-cards, .stats.light-cards {
+    background-color: white;
+}
+
+.dark-mode {
+    background-color: white;
+    color: black;
+}
+
+@media(min-width: 600px){
+    .container {
+        margin: 0 auto;
+        max-width: 90vw;
+        width: 90vw;
+    }
+    .nav {
+        display: flex;
+        flex-direction: row;
+
+    }
+    .stats-today {
+        display: grid;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .stats-today div {
+        width: 150px;
+    }
+    .stats {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .stats div {
+        width: 150px;
+    }
+    
+    
 }
 
     
