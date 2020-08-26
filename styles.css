@@ -179,9 +179,12 @@ flex-direction: column;
     }
     .stats-today {
         display: grid;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
+        grid-template-columns: repeat(4, 1fr);
+        grid-auto-rows: minmax(100px, auto);
+        grid-gap: 10px;
+        grid-template-areas:
+        "facebook-bottom1 instagram-bottom1 twitter-bottom1 youtube-bottom1"
+        "facebook-bottom2 instagram-bottom2 twitter-bottom2 youtube-bottom2";
     }
     .stats-today div {
         width: 150px;
@@ -191,6 +194,8 @@ flex-direction: column;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
+        
+      
     }
     .stats div {
         width: 150px;
